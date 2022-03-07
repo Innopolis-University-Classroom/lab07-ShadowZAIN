@@ -1,10 +1,7 @@
-//change the below code
-// the function below now only works with integers, change it to work with any type
-// also fill out the body
-
+template<typename T>
 public class Calculator {
 private:
-    int num1, num2;
+    T num1, num2;
 
 public:
     Calculator(int n1, int n2) {
@@ -12,23 +9,8 @@ public:
         num2 = n2;
     }
 
-    int add() { return 0; /*your code here*/ }
-    int subtract() { /*your code here*/ }
-    int multiply() { /*your code here*/ }
-    int divide() { /*your code here*/ }
+    T add(T number1, T number2) { return number1 + number2; }
+    T subtract(T number1, T number2) { return number1 - number2; }
+    T multiply(T number1, T number2) { return number1 * number2; }
+    T divide(T number1, T number2) { return number1 / number2; }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
